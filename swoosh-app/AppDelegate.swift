@@ -5,6 +5,7 @@
 //  Created by К.К. on 8.09.18.
 //  Copyright © 2018 TeamK. All rights reserved.
 //
+// app entry point
 
 import UIKit
 

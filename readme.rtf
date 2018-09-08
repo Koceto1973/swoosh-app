@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red178\green24\blue137;
+\red30\green32\blue40;\red255\green255\blue255;\red0\green160\blue190;\red65\green182\blue69;\red120\green109\blue196;
+}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\csgenericrgb\c69800\c9500\c53600;
+\csgenericrgb\c11800\c12500\c15700;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c62600\c74600;\csgenericrgb\c25500\c71400\c27000;\csgenericrgb\c46900\c42600\c77000;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11320\viewh12100\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f0\fs22 \cf2 \cb3 {\listtext	\uc0\u8226 	}To add borders to items:\
+{\listtext	\uc0\u8226 	}\
+{\listtext	\uc0\u8226 	}Create new group into project\
+{\listtext	\uc0\u8226 	}Add cocoa touch class inside the new group\
+{\listtext	\uc0\u8226 	}Make the class inherit the items type to be bordered\
+{\listtext	\uc0\u8226 	}Put some code in it:\
+{\listtext	\uc0\u8226 	}\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf4 \cb5 {\listtext	\uc0\u8226 	}class\cf6  BorderButton: \cf7 UIButton\cf6  \{
+\f1\fs24 \cf0 \
+{\listtext	\uc0\u8226 	}\
+\ls1\ilvl0
+\f0\fs22 \cf6 {\listtext	\uc0\u8226 	}    \cf8 /*
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf8 {\listtext	\uc0\u8226 	}    // Only override draw() if you perform custom drawing.
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf8 {\listtext	\uc0\u8226 	}    // An empty implementation adversely affects performance during animation.
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf8 {\listtext	\uc0\u8226 	}    override func draw(_ rect: CGRect) \{
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf8 {\listtext	\uc0\u8226 	}        // Drawing code
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf8 {\listtext	\uc0\u8226 	}    \}
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf8 {\listtext	\uc0\u8226 	}    */
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf6 {\listtext	\uc0\u8226 	}    
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf6 {\listtext	\uc0\u8226 	}    \cf4 override\cf6  \cf4 func\cf6  awakeFromNib() \{
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf6 {\listtext	\uc0\u8226 	}        \cf4 super\cf6 .\cf7 awakeFromNib\cf6 ()  \cf8 // super func to be called first
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf6 {\listtext	\uc0\u8226 	}        \cf7 layer\cf6 .\cf7 borderColor\cf6  = \cf7 UIColor\cf6 .\cf7 white\cf6 .\cf7 cgColor
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf6 {\listtext	\uc0\u8226 	}        \cf7 layer\cf6 .\cf7 borderWidth\cf6  = \cf9 2.0
+\f1\fs24 \cf0 \
+\ls1\ilvl0
+\f0\fs22 \cf6 {\listtext	\uc0\u8226 	}    \}
+\f1\fs24 \cf0 \
+{\listtext	\uc0\u8226 	}\
+\ls1\ilvl0
+\f0\fs22 \cf6 {\listtext	\uc0\u8226 	}\}\cf2 \cb3 \
+{\listtext	\uc0\u8226 	}\
+{\listtext	\uc0\u8226 	}connect the class to a button set in the view controller via the identity inspector\
+}
