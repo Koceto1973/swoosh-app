@@ -97,15 +97,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Ptu-eB-ZsH"/>
+                                <exclude reference="b0A-ZC-KQ6"/>
+                                <exclude reference="pzP-1G-FbL"/>
                                 <exclude reference="Blu-Tk-34v"/>
                                 <exclude reference="DXw-Q0-IaE"/>
                                 <exclude reference="LeE-fM-jlA"/>
                                 <exclude reference="Mjo-IM-aPK"/>
                                 <exclude reference="P8w-f8-Re7"/>
                                 <exclude reference="vEU-WL-CQW"/>
-                                <exclude reference="Ptu-eB-ZsH"/>
-                                <exclude reference="b0A-ZC-KQ6"/>
-                                <exclude reference="pzP-1G-FbL"/>
                                 <exclude reference="JMc-tS-LdV"/>
                             </mask>
                         </variation>
@@ -196,6 +196,10 @@
                                         <exclude reference="nYc-cI-fRQ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="OnNextClick:" destination="4LX-YF-Ekg" eventType="touchUpInside" id="QZL-ae-S6W"/>
+                                    <action selector="OnNextPress:" destination="mca-0f-sPT" eventType="touchUpInside" id="bm6-0M-dV1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd7-NF-bvp">
                                 <rect key="frame" x="0.0" y="10" width="25" height="25"/>
@@ -231,6 +235,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Exf-XQ-Krz"/>
                     </view>
+                    <connections>
+                        <outlet property="view" destination="LC3-vx-0W2" id="RSO-tj-ecu"/>
+                        <segue destination="XVk-em-uNV" kind="show" identifier="SkillVCsegue" id="NhY-tA-0dr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDF-AX-SGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="mca-0f-sPT" userLabel="Exit" sceneMemberID="exit"/>
