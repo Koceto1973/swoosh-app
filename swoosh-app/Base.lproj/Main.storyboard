@@ -143,6 +143,9 @@
                                         <state key="normal" title="Men">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="OnMenClick:" destination="4LX-YF-Ekg" eventType="touchUpInside" id="tIv-1Y-FAf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO8-YL-h8Q" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="75" width="335" height="50"/>
@@ -154,6 +157,9 @@
                                         <state key="normal" title="Women">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="OnWomenClick:" destination="4LX-YF-Ekg" eventType="touchUpInside" id="rQR-Fz-bF3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIx-qF-Hn4" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="150" width="335" height="50"/>
@@ -165,6 +171,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="OnCoedClick:" destination="4LX-YF-Ekg" eventType="touchUpInside" id="2qs-8Z-lRe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -180,7 +189,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HJF-gG-rnc">
                                 <rect key="frame" x="128" y="40" width="119" height="20"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l54-z1-1nQ" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l54-z1-1nQ" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="597" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40194242289999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -236,7 +245,7 @@
                         <viewLayoutGuide key="safeArea" id="Exf-XQ-Krz"/>
                     </view>
                     <connections>
-                        <outlet property="view" destination="LC3-vx-0W2" id="RSO-tj-ecu"/>
+                        <outlet property="NextButton" destination="l54-z1-1nQ" id="skI-e0-taR"/>
                         <segue destination="XVk-em-uNV" kind="show" identifier="SkillVCsegue" id="NhY-tA-0dr"/>
                     </connections>
                 </viewController>

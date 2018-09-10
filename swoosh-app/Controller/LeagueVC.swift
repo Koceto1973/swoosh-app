@@ -10,16 +10,42 @@ import UIKit
 
 class LeagueVC: UIViewController {
 
+    // storage for player choices, see swift model file
+    // following MVC,
+    // all data in model class or struct
+    // no multiple var pass around controllers
+    var player:Player!
+    
+    @IBOutlet weak var NextButton: BorderButton!
+    // click is manually disabled, to be enabled programatically after other choices
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        player = Player()
     }
 
     
     @IBAction func OnNextClick(_ sender: Any) {
         performSegue(withIdentifier: "SkillVCsegue", sender: self)
         
+    }
+    
+    @IBAction func OnMenClick(_ sender: Any) {
+        SelectLeague(leagueType: "Men")
+    }
+    
+    @IBAction func OnWomenClick(_ sender: Any) {
+        SelectLeague(leagueType: "Women")
+    }
+    
+    @IBAction func OnCoedClick(_ sender: Any) {
+        SelectLeague(leagueType: "Coed")
+    }
+    
+    func SelectLeague( leagueType:String ){
+        player.desiredLegue = leagueType
+        NextButton.isEnabled = true
     }
     
     /*
