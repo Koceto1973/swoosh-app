@@ -48,14 +48,16 @@ class LeagueVC: UIViewController {
         NextButton.isEnabled = true
     }
     
-    /*
-    // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // always called before viewdidload on the destiation ui view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
+        if let skillVC = segue.destination as? SkillVC{
+            skillVC.player = player
+            
+        }
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
