@@ -14,7 +14,7 @@ class SkillVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(player.desiredLegue)
+        print(player.desiredLegue!)
 
         // Do any additional setup after loading the view.
     }
